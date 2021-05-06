@@ -10,4 +10,9 @@ class Post(models.Model):
     
     def __str__(self):
         return self.title
+
+    # create / insert / add - Post
+    # retrive / fetch - Get
+    # update  / edit - Put
+    # delete / rempove - Delete
     

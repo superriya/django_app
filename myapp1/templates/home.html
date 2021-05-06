@@ -1,4 +1,21 @@
 {% extends "base.html" %}
 {% block content %}
-  <h1>Home Page!</h1>
+  <h1 class="mt-5 mb-5">Posts Data!</h1>
+    <div class="row">
+      {% for post in posts %}
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{ post.title }}</h5>
+              <p class="card-text">{{ post.content }}</p>
+              <h4 style="color: rgb(0, 180, 255);
+                        font-size: 14px;
+                        text-align: right;">{{ post.author }}</h4>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  
 {% endblock content %}
